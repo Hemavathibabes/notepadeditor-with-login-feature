@@ -75,7 +75,7 @@ else
 	res.send("unauthorized user");
 }
 });
-app.post('/forgot',function(req, res, next) {
+/*app.post('/forgot',function(req, res, next) {
 
 	let data=req.body;
 	fns.mailcheck('t2',data.email).then(docs=> {
@@ -120,7 +120,7 @@ transporter.sendMail(mailOptions, function(error, info){
 		 
 		 res.end("no account exist for given credentials.");
    });
-	});
+	});*/
 app.get('/loadfiles',(req,res) => {
 	 fns.LoadQuery('t3',username,0,20).then(rows => {
 
